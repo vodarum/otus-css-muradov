@@ -1,3 +1,3 @@
-# otus-css-surname
+# otus-css-muradov
 
 _Git Homework_
