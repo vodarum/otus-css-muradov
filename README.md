@@ -1,3 +1,3 @@
 # otus-css-muradov
 
-_Git Homework_
+_Mod Studio_
