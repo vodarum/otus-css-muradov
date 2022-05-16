@@ -1,48 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @font-face {
     font-family: 'Butler';
-    src: url('../fonts/Butler_Webfont/Butler-UltraLight.woff2') format('woff2'), url('../fonts/Butler_Webfont/Butler-UltraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('../fonts/Butler_Webfont/Butler-Medium.woff2') format('woff2'), url('../fonts/Butler_Webfont/Butler-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('../fonts/Butler_Webfont/Butler-Light.woff2') format('woff2'), url('../fonts/Butler_Webfont/Butler-Light.woff') format('woff');
+    src: local('Butler'), url('../fonts/Butler_Webfont/Butler-Light.woff2') format('woff2'), url('../fonts/Butler_Webfont/Butler-Light.woff') format('woff'), url('../fonts/Butler/Butler_Light.otf') format('otf');
     font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('../fonts/Butler_Webfont/Butler-Black.woff2') format('woff2'), url('../fonts/Butler_Webfont/Butler-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('../fonts/Butler_Webfont/Butler-Bold.woff2') format('woff2'), url('../fonts/Butler_Webfont/Butler-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('../fonts/Butler_Webfont/Butler-ExtraBold.woff2') format('woff2'), url('../fonts/Butler_Webfont/Butler-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('../fonts/Butler_Webfont/Butler.woff2') format('woff2'), url('../fonts/Butler_Webfont/Butler.woff') format('woff');
-    font-weight: normal;
     font-style: normal;
 }

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 /* Base */
 
 *,
@@ -9,6 +7,17 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 16px;
+    }
 }
 
 img {
@@ -21,9 +30,8 @@ img {
 .section-screen {
     height: 100vh;
     min-height: 500px;
-    padding-top: 60px;
-    padding-bottom: 60px;
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -57,6 +65,10 @@ img {
 
 /* Hero */
 
+.hero {
+    padding: 135px 0 60px;
+}
+
 .hero-container {
     position: relative;
 }
@@ -80,8 +92,8 @@ img {
     font-family: 'Butler', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 87px;
-    line-height: 104px;
+    font-size: 5.4rem;
+    line-height: 6.5rem;
     text-align: center;
     color: #000000;
 }
@@ -90,8 +102,8 @@ img {
     margin-top: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.125rem;
+    line-height: 1.3rem;
     text-align: center;
     color: #000000;
 }
