@@ -33,6 +33,12 @@ main {
     position: relative;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 
 /* main::before {
     content: url(../img/maket-202249-38d1e4.jpg);
@@ -50,7 +56,6 @@ main {
 .section-screen {
     height: 100vh;
     min-height: 500px;
-    max-height: 900px;
     overflow: hidden;
     position: relative;
 }
@@ -120,14 +125,14 @@ main {
     margin: 0 auto;
 }
 
-.biography-content-item-right {
-    width: 50%;
-    float: right;
-}
-
 .biography-content-item-left {
     width: 50%;
     float: left;
+}
+
+.biography-content-item-right {
+    width: 50%;
+    float: right;
 }
 
 .biography-text-wrapper {
