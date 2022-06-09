@@ -179,3 +179,62 @@ main {
     width: 95%;
     max-width: 100%;
 }
+
+
+/* Designers */
+
+.designers {
+    display: flex;
+    font-size: 1.125rem;
+    font-family: 'Roboto';
+}
+
+.designers-title {
+    font-size: 1em;
+    transform: rotate(-90deg) translateY(-25px);
+    position: absolute;
+    top: 15%;
+    left: 70%;
+}
+
+.designers-item-1 {
+    width: 42.5%;
+    margin-right: 6em;
+}
+
+.designers-item-1>img {
+    width: 100%;
+    height: 60%;
+    margin: 6em auto 1em 0;
+    object-fit: cover;
+}
+
+.designers-item-1>*:not(:first-child) {
+    margin-left: 11em;
+}
+
+.designers-item-2 {
+    width: 21.4%;
+    margin-right: 1.35em;
+}
+
+.designers-item-3 {
+    width: 22%;
+}
+
+.designers-item-2>img,
+.designers-item-3>img {
+    width: 100%;
+    height: 49%;
+    margin: 11.5em 0 1em;
+    object-fit: cover;
+}
+
+.designers-item-title {
+    font-size: .9em;
+    text-transform: uppercase;
+}
+
+.designers-item-text {
+    font-size: .9em;
+}
