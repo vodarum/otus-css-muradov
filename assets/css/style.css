@@ -50,6 +50,10 @@ main {
     opacity: .5;
 } */
 
+.bold {
+    font-weight: 700;
+}
+
 
 /* Section Screen */
 
