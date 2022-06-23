@@ -191,32 +191,29 @@ main {
 .designers {
     font-size: 1.125rem;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .designers-title {
     font-size: 1em;
-    transform: rotate(-90deg) translateY(-25px);
+    transform: rotate(-90deg) translateX(350%);
     position: absolute;
-    top: 15%;
+    top: 50%;
     left: 70%;
 }
 
 .designers-flex-container {
-    height: 100%;
-    padding-top: 14%;
     display: flex;
-    overflow-x: scroll;
-}
-
-.designers-item {
-    height: 85%;
-    margin: 0 .5em;
-    flex: 0 0 22%;
+    align-items: baseline;
+    gap: 1.33334em;
+    overflow-x: auto;
 }
 
 .designers-item>img {
-    width: 100%;
-    height: 75%;
+    width: 17.22223em;
+    height: 24.55556em;
     object-fit: cover;
 }
 
@@ -231,13 +228,20 @@ main {
 }
 
 .designers-item_active {
-    margin-right: 5em;
-    flex-basis: 42%;
+    margin: 0 5.55556em;
+}
+
+.designers-item:first-child.designers-item_active {
+    margin: 0 5.55556em 0 0;
+}
+
+.designers-item:last-child.designers-item_active {
+    margin: 0 0 0 5.55556em;
 }
 
 .designers-item_active>img {
-    transform: scale(1.2);
-    transform-origin: bottom;
+    width: 33.88889em;
+    height: 29.88889em;
 }
 
 .designers-item_active>.designers-item-title,
