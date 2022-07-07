@@ -48,7 +48,12 @@ main {
     left: 0;
     right: 0;
     opacity: .5;
+    opacity: 0;
 } */
+
+.bold {
+    font-weight: 700;
+}
 
 
 /* Section Screen */
@@ -178,4 +183,69 @@ main {
 .biography-img {
     width: 95%;
     max-width: 100%;
+}
+
+
+/* Designers */
+
+.designers {
+    font-size: 1.125rem;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.designers-title {
+    font-size: 1em;
+    transform: rotate(-90deg) translateX(350%);
+    position: absolute;
+    top: 50%;
+    left: 70%;
+}
+
+.designers-flex-container {
+    display: flex;
+    align-items: baseline;
+    gap: 1.33334em;
+    overflow-x: auto;
+}
+
+.designers-item>img {
+    width: 17.22223em;
+    height: 24.55556em;
+    object-fit: cover;
+}
+
+.designers-item-title {
+    margin-top: 1em;
+    font-size: .9em;
+    text-transform: uppercase;
+}
+
+.designers-item-text {
+    font-size: .9em;
+}
+
+.designers-item_active {
+    margin: 0 5.55556em;
+}
+
+.designers-item:first-child.designers-item_active {
+    margin: 0 5.55556em 0 0;
+}
+
+.designers-item:last-child.designers-item_active {
+    margin: 0 0 0 5.55556em;
+}
+
+.designers-item_active>img {
+    width: 33.88889em;
+    height: 29.88889em;
+}
+
+.designers-item_active>.designers-item-title,
+.designers-item_active>.designers-item-text {
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
