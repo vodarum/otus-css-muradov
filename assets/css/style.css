@@ -263,12 +263,14 @@ main {
     font-family: 'Roboto', sans-serif;
     font-size: 1.125em;
     flex: 1 0 100%;
-    transform: translate(12%, 87%);
+    padding-left: 12%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .testimonials-content {
     display: flex;
-    padding-top: 47px;
+    padding-top: 30px;
 }
 
 .testimonials-linkbar {
@@ -338,7 +340,8 @@ main {
     .testimonials-title {
         grid-row: 2;
         grid-column: 2;
-        transform: none;
+        padding-left: 0;
+        display: block;
     }
     .testimonials-content {
         grid-row: 3;
@@ -383,6 +386,7 @@ main {
 }
 
 .strong-points-flex-container {
+    padding-top: 150px;
     display: flex;
     align-items: center;
     gap: 1.75em;
@@ -396,17 +400,21 @@ main {
 
 .strong-points-title {
     position: absolute;
-    transform: rotate(-90deg) translate(335%, -1200%);
+    transform: rotate(-90deg) translate(260%, -1100%);
     font-family: 'Roboto', sans-serif;
     font-size: 1.125em;
 }
 
-.strong-points-subtitle {
+.strong-points-list-wrapper {
+    position: relative;
+}
+
+.strong-points-list-title {
     font-family: 'Butler', sans-serif;
     font-size: 5.75em;
     font-weight: 300;
     position: absolute;
-    transform: translate(80%, -310%);
+    transform: translate(15%, -130%);
 }
 
 .strong-points-list {
