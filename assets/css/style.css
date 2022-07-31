@@ -2,6 +2,7 @@
 
 :root {
     font-size: 16px;
+    line-height: 1.2;
 }
 
 *,
@@ -16,10 +17,9 @@
 body {
     background-color: #fff;
     color: #000;
-}
-
-html {
-    line-height: 1.2;
+    font-family: 'Butler', 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 main {
@@ -81,7 +81,6 @@ main {
 }
 
 .hero-title {
-    font-family: 'Butler', sans-serif;
     font-weight: 300;
     font-size: 1em;
     white-space: nowrap;
@@ -90,7 +89,7 @@ main {
 .hero-subtitle {
     margin-top: 0.8em;
     margin-bottom: -2em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: .2em;
 }
@@ -121,7 +120,7 @@ main {
     bottom: 100px;
     right: 40px;
     transform: rotate(-90deg);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.125em;
 }
 
@@ -150,21 +149,19 @@ main {
 .biography-text-wrapper h3 {
     width: 50%;
     margin-bottom: .55em;
-    font-family: 'Butler', sans-serif;
     font-size: 1em;
     font-weight: 300;
     line-height: 1.15;
 }
 
 .biography-text-wrapper p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: .2em;
     color: #636363;
 }
 
 .biography-text-wrapper blockquote {
     margin-top: 2.85em;
-    font-family: 'Butler', sans-serif;
     font-size: .38em;
     font-weight: 200;
     line-height: 1.1;
@@ -190,7 +187,7 @@ main {
 
 .designers {
     font-size: 1.125rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -260,7 +257,7 @@ main {
 }
 
 .testimonials-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.125em;
     flex: 1 0 100%;
     padding-left: 12%;
@@ -288,14 +285,14 @@ main {
 .testimonials-link {
     display: inline-block;
     transform: rotate(-90deg);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: #000;
     position: absolute;
     left: -65px;
 }
 
-.testimonials-linkbar-item>span:first-child {
+.testimonials-link>span:first-child {
     font-weight: 700;
 }
 
@@ -324,9 +321,8 @@ main {
 
 .testimonials blockquote {
     max-width: 30%;
-    font-family: 'Butler', sans-serif;
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.15;
     text-align: center;
 }
@@ -401,7 +397,7 @@ main {
 .strong-points-title {
     position: absolute;
     transform: rotate(-90deg) translate(260%, -1100%);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.125em;
 }
 
@@ -410,7 +406,6 @@ main {
 }
 
 .strong-points-list-title {
-    font-family: 'Butler', sans-serif;
     font-size: 5.75em;
     font-weight: 300;
     position: absolute;
@@ -419,8 +414,6 @@ main {
 
 .strong-points-list {
     margin: 0 4em;
-    font-family: 'Butler', sans-serif;
     font-size: 2.125em;
-    font-weight: 300;
     list-style: none;
 }
