@@ -19,6 +19,7 @@ body {
     background-color: #fff;
     color: #000;
     font-family: 'Butler', 'Times New Roman', Times, serif;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -64,7 +65,7 @@ main {
 /* Hero */
 
 .hero-title-wrapper {
-    padding: 1.4em 0;
+    padding: 4em 0 1.4em;
     font-size: 4.375rem;
     text-align: center;
     background-color: #fff;
