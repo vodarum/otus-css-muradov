@@ -27,6 +27,15 @@
         max-width: 1440px;
         margin: 0 auto;
     }
+    /* Bootstrap Reboot */
+    
+    p {
+        margin: 0;
+    }
+    
+    img {
+        vertical-align: baseline;
+    }
     
     .clearfix::after {
         content: "";
@@ -247,21 +256,10 @@
         right: 30px;
     }
     
-    .biography-content {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-    
     .biography-content-item-left {
-        order: 2;
         height: 370px;
         margin-top: -10px;
         overflow: hidden;
-    }
-    
-    .biography-content-item-right {
-        order: 1;
     }
     
     .biography-text-wrapper {
@@ -374,18 +372,9 @@
         }
         .biography-content {
             max-width: 970px;
-            margin: 0 auto;
-            display: block;
         }
         .biography-content-item-left {
-            width: 50%;
-            float: left;
             height: unset;
-            margin: 0;
-        }
-        .biography-content-item-right {
-            width: 50%;
-            float: right;
         }
         .biography-text-wrapper {
             width: 80%;
@@ -552,14 +541,10 @@
     }
     
     .testimonials-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         padding-top: 120px;
     }
     
     .testimonials-linkbar {
-        order: 2;
         display: flex;
         flex-wrap: wrap;
     }
@@ -582,12 +567,10 @@
         font-weight: 700;
     }
     
-    .testimonials-img {
-        width: 100%;
-    }
-    
-    .testimonials-img-1 {
-        display: none;
+    @media (min-width: 375px) {
+        .testimonials-img {
+            width: 100%;
+        }
     }
     
     .testimonials-img-2 {
@@ -633,7 +616,6 @@
         .testimonials-blockquote-wrapper {
             max-width: 600px;
             order: unset;
-            flex: 0 0 85%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -662,14 +644,10 @@
             text-align: unset;
         }
         .testimonials-content {
-            flex-direction: row;
-            align-items: unset;
             padding-top: 30px;
         }
         .testimonials-linkbar {
-            padding: 0;
             order: unset;
-            flex: 1 0 5%;
             flex-wrap: nowrap;
             flex-direction: column;
             justify-content: space-around;
@@ -685,8 +663,6 @@
             left: -65px;
         }
         .testimonials-img-1 {
-            display: block;
-            flex: 1 0 36%;
             max-width: 36%;
             object-fit: cover;
         }
@@ -696,54 +672,10 @@
         }
         .testimonials-blockquote-wrapper {
             max-width: unset;
-            flex: 1 0 45%;
             padding-left: 30px;
         }
         .testimonials blockquote {
             max-width: 30%;
-        }
-        @supports(display: grid) {
-            .testimonials {
-                display: grid;
-                grid-template-rows: minmax(auto, 80px) minmax(auto, 60px) 1fr;
-                grid-template-columns: minmax(auto, 178px) auto;
-            }
-            .testimonials-title {
-                grid-row: 2;
-                grid-column: 2;
-                padding-left: 0;
-                display: block;
-            }
-            .testimonials-content {
-                grid-row: 3;
-                grid-column: 1/3;
-                display: grid;
-                grid-template-rows: 1fr;
-                grid-template-columns: minmax(auto, 178px) minmax(auto, 514px) minmax(auto, 295px) minmax(auto, 222px) auto;
-                padding-top: 0;
-            }
-            .testimonials-linkbar {
-                grid-row: 1;
-                grid-column: 1;
-            }
-            .testimonials-img-1 {
-                grid-row: 1;
-                grid-column: 2;
-                height: 100%;
-                max-width: none;
-            }
-            .testimonials-img-2 {
-                max-width: none;
-            }
-            .testimonials-blockquote-wrapper {
-                grid-row: 1;
-                grid-column: 4;
-                display: block;
-                padding-left: 0;
-            }
-            .testimonials blockquote {
-                max-width: none;
-            }
         }
     }
     /* Strong Points */
