@@ -27,22 +27,15 @@
         max-width: 1440px;
         margin: 0 auto;
     }
+    /* Bootstrap Reboot */
     
-    .clearfix::after {
-        content: "";
-        display: block;
-        clear: both;
+    p {
+        margin: 0;
     }
-    /* main::before {
-    content: url(../img/maket-202249-38d1e4.jpg);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: .5;
-    opacity: 0;
-} */
+    
+    img {
+        vertical-align: baseline;
+    }
     /* Menu */
     
     @media (min-width: 768px) {
@@ -184,8 +177,6 @@
     }
     
     .hero-img {
-        width: 100%;
-        height: 100%;
         object-fit: cover;
         transform: translate(0%, -45%) scale(2.5);
     }
@@ -213,7 +204,6 @@
             font-size: .2em;
         }
         .hero-img-wrapper {
-            width: 100%;
             max-width: 900px;
             height: 100%;
             max-height: 630px;
@@ -243,25 +233,13 @@
         font-family: 'Roboto', Arial, Helvetica, sans-serif;
         font-size: 1.125em;
         position: absolute;
-        top: 48px;
         right: 30px;
     }
     
-    .biography-content {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-    
     .biography-content-item-left {
-        order: 2;
         height: 370px;
         margin-top: -10px;
         overflow: hidden;
-    }
-    
-    .biography-content-item-right {
-        order: 1;
     }
     
     .biography-text-wrapper {
@@ -368,24 +346,15 @@
         }
         .biography-title {
             top: unset;
-            bottom: 100px;
+            bottom: 30px;
             right: 0;
             transform: rotate(-90deg);
         }
         .biography-content {
             max-width: 970px;
-            margin: 0 auto;
-            display: block;
         }
         .biography-content-item-left {
-            width: 50%;
-            float: left;
             height: unset;
-            margin: 0;
-        }
-        .biography-content-item-right {
-            width: 50%;
-            float: right;
         }
         .biography-text-wrapper {
             width: 80%;
@@ -408,6 +377,7 @@
             color: #636363;
         }
         .biography-text-wrapper blockquote {
+            width: 90%;
             margin-top: 2.85em;
             padding: 0;
             font-size: .38em;
@@ -431,6 +401,12 @@
     @media (min-width: 1280px) {
         .biography-content {
             max-width: 1176px;
+        }
+        .biography-title {
+            bottom: 100px;
+        }
+        .biography-text-wrapper blockquote {
+            width: unset;
         }
     }
     
@@ -490,11 +466,6 @@
     }
     
     @media (min-width: 992px) {
-        .designers {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
         .designers-title {
             padding: 0;
             transform: rotate(-90deg) translateX(350%);
@@ -552,14 +523,10 @@
     }
     
     .testimonials-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         padding-top: 120px;
     }
     
     .testimonials-linkbar {
-        order: 2;
         display: flex;
         flex-wrap: wrap;
     }
@@ -582,12 +549,10 @@
         font-weight: 700;
     }
     
-    .testimonials-img {
-        width: 100%;
-    }
-    
-    .testimonials-img-1 {
-        display: none;
+    @media (min-width: 375px) {
+        .testimonials-img {
+            width: 100%;
+        }
     }
     
     .testimonials-img-2 {
@@ -633,7 +598,6 @@
         .testimonials-blockquote-wrapper {
             max-width: 600px;
             order: unset;
-            flex: 0 0 85%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -656,20 +620,16 @@
         .testimonials-title {
             font-size: 1.125em;
             flex: 1 0 100%;
-            padding-left: 12%;
+            padding-left: 10.5%;
             display: flex;
             align-items: flex-end;
             text-align: unset;
         }
         .testimonials-content {
-            flex-direction: row;
-            align-items: unset;
             padding-top: 30px;
         }
         .testimonials-linkbar {
-            padding: 0;
             order: unset;
-            flex: 1 0 5%;
             flex-wrap: nowrap;
             flex-direction: column;
             justify-content: space-around;
@@ -685,8 +645,6 @@
             left: -65px;
         }
         .testimonials-img-1 {
-            display: block;
-            flex: 1 0 36%;
             max-width: 36%;
             object-fit: cover;
         }
@@ -696,54 +654,10 @@
         }
         .testimonials-blockquote-wrapper {
             max-width: unset;
-            flex: 1 0 45%;
             padding-left: 30px;
         }
         .testimonials blockquote {
             max-width: 30%;
-        }
-        @supports(display: grid) {
-            .testimonials {
-                display: grid;
-                grid-template-rows: minmax(auto, 80px) minmax(auto, 60px) 1fr;
-                grid-template-columns: minmax(auto, 178px) auto;
-            }
-            .testimonials-title {
-                grid-row: 2;
-                grid-column: 2;
-                padding-left: 0;
-                display: block;
-            }
-            .testimonials-content {
-                grid-row: 3;
-                grid-column: 1/3;
-                display: grid;
-                grid-template-rows: 1fr;
-                grid-template-columns: minmax(auto, 178px) minmax(auto, 514px) minmax(auto, 295px) minmax(auto, 222px) auto;
-                padding-top: 0;
-            }
-            .testimonials-linkbar {
-                grid-row: 1;
-                grid-column: 1;
-            }
-            .testimonials-img-1 {
-                grid-row: 1;
-                grid-column: 2;
-                height: 100%;
-                max-width: none;
-            }
-            .testimonials-img-2 {
-                max-width: none;
-            }
-            .testimonials-blockquote-wrapper {
-                grid-row: 1;
-                grid-column: 4;
-                display: block;
-                padding-left: 0;
-            }
-            .testimonials blockquote {
-                max-width: none;
-            }
         }
     }
     /* Strong Points */
@@ -800,9 +714,6 @@
     @media (min-width: 992px) {
         .strong-points {
             padding-bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             font-size: 1rem;
         }
         .strong-points-title {
