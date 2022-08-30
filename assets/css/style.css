@@ -36,22 +36,6 @@
     img {
         vertical-align: baseline;
     }
-    
-    .clearfix::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-    /* main::before {
-    content: url(../img/maket-202249-38d1e4.jpg);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: .5;
-    opacity: 0;
-} */
     /* Menu */
     
     @media (min-width: 768px) {
@@ -193,8 +177,6 @@
     }
     
     .hero-img {
-        width: 100%;
-        height: 100%;
         object-fit: cover;
         transform: translate(0%, -45%) scale(2.5);
     }
@@ -222,7 +204,6 @@
             font-size: .2em;
         }
         .hero-img-wrapper {
-            width: 100%;
             max-width: 900px;
             height: 100%;
             max-height: 630px;
@@ -252,7 +233,6 @@
         font-family: 'Roboto', Arial, Helvetica, sans-serif;
         font-size: 1.125em;
         position: absolute;
-        top: 48px;
         right: 30px;
     }
     
@@ -366,7 +346,7 @@
         }
         .biography-title {
             top: unset;
-            bottom: 100px;
+            bottom: 30px;
             right: 0;
             transform: rotate(-90deg);
         }
@@ -397,6 +377,7 @@
             color: #636363;
         }
         .biography-text-wrapper blockquote {
+            width: 90%;
             margin-top: 2.85em;
             padding: 0;
             font-size: .38em;
@@ -420,6 +401,12 @@
     @media (min-width: 1280px) {
         .biography-content {
             max-width: 1176px;
+        }
+        .biography-title {
+            bottom: 100px;
+        }
+        .biography-text-wrapper blockquote {
+            width: unset;
         }
     }
     
@@ -479,11 +466,6 @@
     }
     
     @media (min-width: 992px) {
-        .designers {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
         .designers-title {
             padding: 0;
             transform: rotate(-90deg) translateX(350%);
@@ -638,7 +620,7 @@
         .testimonials-title {
             font-size: 1.125em;
             flex: 1 0 100%;
-            padding-left: 12%;
+            padding-left: 10.5%;
             display: flex;
             align-items: flex-end;
             text-align: unset;
@@ -732,9 +714,6 @@
     @media (min-width: 992px) {
         .strong-points {
             padding-bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             font-size: 1rem;
         }
         .strong-points-title {
