@@ -10,70 +10,106 @@
 
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    '2xs': '375px',
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '992px',
+                    'xl': '1280px',
+                },
+                extend: {
+                    lineHeight: {
+                        'base': '1.2',
+                    }
+                },
+                fontFamily: {
+                    'sans': ['Roboto', 'Arial', 'Helvetica', 'sans-serif'],
+                    'serif': ['Butler', 'Times New Roman', 'Times', 'serif'],
+                },
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body class="min-w-[320px] bg-white font-serif font-light text-base leading-base text-black">
     <!-- Nav Start -->
-    <span class="menu"><span></span></span>
-    <nav class="nav">
-        <a href="#biography" class="nav-link">
-            <span class="nav-link-text nav-link-text_d">Biography</span>
-            <span class="nav-link-text nav-link-text_m">B</span>
+    <!-- Menu Start -->
+    <span class="md:block md:w-[34px] md:h-[22px] md:mx-auto md:my-[50px] md:hover:cursor-pointer menu">
+        <span
+            class="md:block md:relative md:w-[34px] md:h-[2px] md:top-[10px] md:bg-black md:before:content-[''] md:before:absolute md:before:w-[34px] md:before:h-[2px] md:before:bg-black md:before:top-[-8px] md:after:content-[''] md:after:absolute md:after:w-[34px] md:after:h-[2px] md:after:bg-black md:after:top-[8px]">
+            <!-- Burger Button -->
+        </span>
+    </span>
+    <!-- Menu End -->
+    <nav
+        class="py-5 px-0 flex justify-around bg-white fixed bottom-0 left-0 right-0 border-t border-black border-solid z-[1] md:hidden md:relative md:border-0">
+        <a href="#biography" class="nav-link text-black no-underline">
+            <span class="hidden md:inline">Biography</span>
+            <span class="text-[2.5rem] font-medium lg:hidden">B</span>
         </a>
-        <a href="#designers" class="nav-link">
-            <span class="nav-link-text nav-link-text_d">Designers</span>
-            <span class="nav-link-text nav-link-text_m">D</span>
+        <a href="#designers" class="nav-link text-black no-underline">
+            <span class="hidden md:inline">Designers</span>
+            <span class="text-[2.5rem] font-medium lg:hidden">D</span>
         </a>
-        <a href="#testimonials" class="nav-link">
-            <span class="nav-link-text nav-link-text_d">Testimonials</span>
-            <span class="nav-link-text nav-link-text_m">T</span>
+        <a href="#testimonials" class="nav-link text-black no-underline">
+            <span class="hidden md:inline">Testimonials</span>
+            <span class="text-[2.5rem] font-medium lg:hidden">T</span>
         </a>
-        <a href="#strong_points" class="nav-link active">
-            <span class="nav-link-text nav-link-text_d">Strong
+        <a href="#strong_points" class="nav-link text-black no-underline active">
+            <span class="hidden md:inline">Strong
                 points</span>
-            <span class="nav-link-text nav-link-text_m">S</span>
+            <span class="text-[2.5rem] font-medium lg:hidden">S</span>
         </a>
     </nav>
     <!-- Nav End -->
 
     <!-- Main Start -->
-    <main>
+    <main class="max-w-[1440px] mx-auto">
         <!-- Section Hero Start -->
-        <section class="section-screen hero">
+        <section class="min-h-[500px] relative overflow-hidden lg:h-[800px] xl:h-screen hero">
             <div class="hero-title-wrapper">
-                <h1 class="hero-title">Atlas Studio</h1>
-                <h2 class="hero-subtitle">Modern Web Studio</h2>
+                <h1 class="hero-title font-light 2xs:whitespace-nowrap">Atlas Studio</h1>
+                <h2 class="hero-subtitle font-sans font-medium lg:font-bold">Modern Web Studio</h2>
             </div>
 
-            <div class="hero-img-wrapper">
-                <img class="hero-img" src="assets/img/31ee4e02a8c754e8f5a375a73f9e93f0.jpg" alt="Atlas Studio">
+            <div
+                class="overflow-hidden h-[495px] lg:w-full lg:max-w-[900px] lg:h-full lg:max-h-[630px] lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 xl:max-w-[1065px]">
+                <img class="w-full h-full object-cover translate-y-[-45%] scale-[2.5] lg:translate-y-0 lg:scale-100"
+                    src="assets/img/31ee4e02a8c754e8f5a375a73f9e93f0.jpg" alt="Atlas Studio">
             </div>
         </section>
         <!-- Section Hero End -->
 
         <!-- Section Biography Start -->
-        <section class="section-screen biography" id="biography">
-            <h2 class="biography-title">Biography</h2>
+        <section class="pt-12 min-h-[500px] relative overflow-hidden lg:pt-0 lg:h-[800px] xl:h-screen biography"
+            id="biography">
+            <h2 class="biography-title font-sans font-bold">Biography</h2>
 
-            <div class="biography-content clearfix">
-                <div class="biography-content-item-left">
-                    <img class="biography-img" src="assets/img/24723f9e1ae53d0104ba4ec97426c1a1.jpg" alt="Katya Mills">
+            <div class="mx-auto my-0 flex flex-col lg:max-w-[970px] lg:mx-auto lg:flex-row xl:max-w-[1176px]">
+                <div class="biography-content-item-left order-2 mt-[-10px] overflow-hidden lg:order-1 lg:basis-1/2">
+                    <img class="w-full translate-y-[-20%] lg:w-[95%] lg:translate-y-0"
+                        src="assets/img/24723f9e1ae53d0104ba4ec97426c1a1.jpg" alt="Katya Mills">
                 </div>
 
-                <div class="biography-content-item-right">
+                <div class="order-1 lg:order-2 lg:basis-1/2">
                     <div class="biography-text-wrapper">
                         <h3>Katya Mills</h3>
 
-                        <p class="biography-position">
+                        <p class="biography-position font-sans">
                             Art Director
                         </p>
 
-                        <p class="biography-skills">
+                        <p class="biography-skills font-sans">
                             Scenography&nbsp;/ Styling&nbsp;/ Creative Photography&nbsp;/ Design
                         </p>
 
                         <blockquote cite="#">
-                            The more&nbsp;I deal with the work as&nbsp;something that is&nbsp;my&nbsp;own, as&nbsp;something that is&nbsp;personal, the&nbsp;more successful it&nbsp;is.
+                            The more&nbsp;I deal with the work as&nbsp;something that is&nbsp;my&nbsp;own,
+                            as&nbsp;something that is&nbsp;personal, the&nbsp;more successful it&nbsp;is.
                         </blockquote>
                     </div>
                 </div>
@@ -82,55 +118,63 @@
         <!-- Section Biography End -->
 
         <!-- Section Designers Start -->
-        <section class="section-screen designers" id="designers">
-            <h2 class="designers-title">Designers</h2>
+        <section
+            class="min-h-[500px] relative overflow-hidden font-sans lg:h-[800px] xl:h-screen lg:flex lg:items-center lg:justify-center designers"
+            id="designers">
+            <h2 class="designers-title text-right font-bold lg:text-left lg:p-0 lg:absolute lg:top-1/2 lg:left-[70%]">
+                Designers
+            </h2>
 
-            <div class="designers-flex-container">
+            <div
+                class="py-5 flex items-baseline gap-[1.125em] overflow-x-scroll 2xs:py-9 lg:mt-[7em] lg:p-0 lg:gap-[1.33334em]">
                 <article class="designers-item">
-                    <img class="designers-item-img" src="assets/img/6f5d7962945b3d3a3ee2f03d1819ce12.jpg" alt="Jess Wonder">
+                    <img class="designers-item-img" src="assets/img/6f5d7962945b3d3a3ee2f03d1819ce12.jpg"
+                        alt="Jess Wonder">
 
                     <h3 class="designers-item-title">
                         Jess Wonder
                     </h3>
 
                     <p class="designers-item-text">
-                        <span>From/</span> Be&nbsp;more flower
+                        <span class="font-bold">From/</span> Be&nbsp;more flower
                     </p>
 
                     <p class="designers-item-text">
-                        <span>Skills/</span> Design Strategy&nbsp;/ Marketing
+                        <span class="font-bold">Skills/</span> Design Strategy&nbsp;/ Marketing
                     </p>
                 </article>
 
                 <article class="designers-item">
-                    <img class="designers-item-img" src="assets/img/5de9a40192fe8ffcf63df935a709dc7b.jpg" alt="Kameron Clein">
+                    <img class="designers-item-img" src="assets/img/5de9a40192fe8ffcf63df935a709dc7b.jpg"
+                        alt="Kameron Clein">
 
                     <h3 class="designers-item-title">
                         Kameron Clein
                     </h3>
 
                     <p class="designers-item-text">
-                        <span>From/</span> Be&nbsp;more flower
+                        <span class="font-bold">From/</span> Be&nbsp;more flower
                     </p>
 
                     <p class="designers-item-text">
-                        <span>Skills/</span> Design Strategy&nbsp;/ Marketing
+                        <span class="font-bold">Skills/</span> Design Strategy&nbsp;/ Marketing
                     </p>
                 </article>
 
                 <article class="designers-item">
-                    <img class="designers-item-img" src="assets/img/ccc57ac90d1d0c61f01b4c6875293c22.jpg" alt="Louisse Red">
+                    <img class="designers-item-img" src="assets/img/ccc57ac90d1d0c61f01b4c6875293c22.jpg"
+                        alt="Louisse Red">
 
                     <h3 class="designers-item-title">
                         Louisse Red
                     </h3>
 
                     <p class="designers-item-text">
-                        <span>From/</span> Be&nbsp;more flower
+                        <span class="font-bold">From/</span> Be&nbsp;more flower
                     </p>
 
                     <p class="designers-item-text">
-                        <span>Skills/</span> Design Strategy&nbsp;/ Marketing
+                        <span class="font-bold">Skills/</span> Design Strategy&nbsp;/ Marketing
                     </p>
                 </article>
             </div>
@@ -138,14 +182,17 @@
         <!-- Section Designers End -->
 
         <!-- Section Testimonials Start -->
-        <section class="section-screen testimonials" id="testimonials">
-            <h2 class="testimonials-title">Testimonials</h2>
+        <section
+            class="min-h-[500px] relative overflow-hidden lg:h-[800px] xl:h-screen lg:p-0 lg:flex lg:flex-wrap testimonials"
+            id="testimonials">
+            <h2 class="testimonials-title font-sans text-right font-bold">Testimonials</h2>
 
-            <div class="testimonials-content">
-                <aside class="testimonials-linkbar">
+            <div
+                class="testimonials-content pt-[120px] flex flex-col items-center lg:flex-row lg:items-start lg:pt-[30px]">
+                <aside class="testimonials-linkbar h-full">
                     <div class="testimonials-linkbar-item">
-                        <a href="www.whitepapers.com" class="testimonials-link">
-                            <span>
+                        <a href="www.whitepapers.com" class="testimonials-link font-sans">
+                            <span class="font-bold">
                                 Website
                             </span>
                             <span>
@@ -155,8 +202,8 @@
                     </div>
 
                     <div class="testimonials-linkbar-item">
-                        <a href="www.whitepapers.com" class="testimonials-link">
-                            <span>
+                        <a href="www.whitepapers.com" class="testimonials-link font-sans">
+                            <span class="font-bold">
                                 Creativity
                             </span>
                             <span>
@@ -166,8 +213,8 @@
                     </div>
 
                     <div class="testimonials-linkbar-item">
-                        <a href="www.whitepapers.com" class="testimonials-link">
-                            <span>
+                        <a href="www.whitepapers.com" class="testimonials-link font-sans">
+                            <span class="font-bold">
                                 Creativity
                             </span>
                             <span>
@@ -177,32 +224,41 @@
                     </div>
                 </aside>
 
-                <img class="testimonials-img testimonials-img-1" src="assets/img/39f705c7d026b5d428a6d433eca95518.jpg" alt="Some Alt 1">
+                <img class="w-full h-full hidden lg:block lg:max-w-[36%] lg:object-cover lg:flex-[1_0_36%]"
+                    src="assets/img/39f705c7d026b5d428a6d433eca95518.jpg" alt="Some Alt 1">
 
                 <div class="testimonials-blockquote-wrapper">
                     <blockquote cite="#">
-                        I&nbsp;just really want to&nbsp;do&nbsp;good work and work with some great people, people who challange&nbsp;me.
+                        I&nbsp;just really want to&nbsp;do&nbsp;good work and work with some great people, people who
+                        challange&nbsp;me.
                     </blockquote>
 
-                    <img class="testimonials-img testimonials-img-2" src="assets/img/f9b871fa25e994be9288053d6efd4ca6.jpg" alt="Some Alt 2">
+                    <img class="w-full testimonials-img-2" src="assets/img/f9b871fa25e994be9288053d6efd4ca6.jpg"
+                        alt="Some Alt 2">
                 </div>
             </div>
         </section>
         <!-- Section Testimonials End -->
 
         <!-- Section Strong points Start -->
-        <section class="section-screen strong-points" id="strong_points">
-            <h2 class="strong-points-title">Strong points</h2>
+        <section
+            class="min-h-[500px] pb-[150px] relative overflow-hidden text-base leading-base lg:h-[800px] lg:pb-0 lg:flex lg:justify-center lg:items-center xl:h-screen"
+            id="strong_points">
+            <h2
+                class="px-9 pb-[42px] text-right font-bold text-[1.125em] font-sans lg:p-0 lg:absolute lg:translate-x-[-218%] lg:translate-y-[-1310%] lg:-rotate-90">
+                Strong points</h2>
 
-            <div class="strong-points-flex-container">
-                <img src="assets/img/f48d6d116869ff67e9acfc0213764be3.jpg" alt="Some Alt 1">
+            <div class="pt-[150px] px-5 2xs:px-9 lg:px-0 flex items-center gap-[1.75em] overflow-x-auto">
+                <img class="max-w-[21.875em] max-h-[32.8125em] w-[93%]"
+                    src="assets/img/f48d6d116869ff67e9acfc0213764be3.jpg" alt="Some Alt 1">
 
-                <img src="assets/img/e6e6842a8296d1a5a4d100a3a32b7898.jpg" alt="Some Alt 2">
+                <img class="max-w-[21.875em] max-h-[32.8125em] w-[93%]"
+                    src="assets/img/e6e6842a8296d1a5a4d100a3a32b7898.jpg" alt="Some Alt 2">
 
-                <div class="strong-points-list-wrapper">
-                    <h3 class="strong-points-list-title">Strengths</h3>
+                <div class="relative">
+                    <h3 class="text-[5.75em] font-light absolute translate-x-[15%] translate-y-[-130%]">Strengths</h3>
 
-                    <ul class="strong-points-list">
+                    <ul class="ml-[2em] mr-[1.7em] my-0 list-none text-[2.125em] lg:mx-[4em]">
                         <li>
                             Interiors
                         </li>
@@ -242,7 +298,8 @@
                     </ul>
                 </div>
 
-                <img src="assets/img/f48d6d116869ff67e9acfc0213764be3.jpg" alt="Some Alt 3">
+                <img class="max-w-[21.875em] max-h-[32.8125em] w-[93%]"
+                    src="assets/img/f48d6d116869ff67e9acfc0213764be3.jpg" alt="Some Alt 3">
             </div>
         </section>
         <!-- Section Strong points End -->
