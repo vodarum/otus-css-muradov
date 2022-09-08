@@ -43,6 +43,20 @@
     opacity: .5;
     opacity: 0;
 } */
+
+.h2-title  {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.125em;
+}
+
+.link {
+    color: #000;
+    text-decoration: none;
+}
+
+.blockquote {
+    font-weight: 200;
+}
     /* Menu */
     
     @media (min-width: 768px) {
@@ -91,11 +105,6 @@
         z-index: 1;
         background-color: #fff;
         border-top: 1px solid #000;
-    }
-    
-    .nav__link {
-        color: #000;
-        text-decoration: none;
     }
     
     .nav__link_active {
@@ -240,8 +249,6 @@
     
     .biography__title {
         display: inline-block;
-        font-family: 'Roboto', Arial, Helvetica, sans-serif;
-        font-size: 1.125em;
         position: absolute;
         top: 48px;
         right: 30px;
@@ -313,7 +320,6 @@
     .biography__blockquote {
         padding: 100px 0 80px;
         font-size: .462em;
-        font-weight: 200;
         line-height: 1.1;
         order: 3;
     }
@@ -451,7 +457,6 @@
     
     .designers__title {
         padding: 72px 36px 52px;
-        font-size: 1em;
         text-align: right;
     }
     
@@ -547,8 +552,6 @@
     
     .testimonials__title {
         text-align: right;
-        font-family: 'Roboto', Arial, Helvetica, sans-serif;
-        font-size: 1.125em;
     }
     
     .testimonials__content {
@@ -574,8 +577,6 @@
     .testimonials__link {
         display: inline-block;
         font-family: 'Roboto', Arial, Helvetica, sans-serif;
-        text-decoration: none;
-        color: #000;
     }
     
     .testimonials__link>span:first-child {
@@ -603,7 +604,6 @@
     
     .testimonials__blockquote {
         font-size: 2em;
-        font-weight: 200;
         line-height: 1.15;
         text-align: center;
     }
@@ -654,7 +654,6 @@
             font-size: 1rem;
         }
         .testimonials__title {
-            font-size: 1.125em;
             flex: 1 0 100%;
             padding-left: 12%;
             display: flex;
@@ -769,8 +768,6 @@
     
     .strong-points__title {
         padding: 0 36px 42px;
-        font-family: 'Roboto', Arial, Helvetica, sans-serif;
-        font-size: 1.125em;
         text-align: right;
     }
     
