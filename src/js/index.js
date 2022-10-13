@@ -1,3 +1,3 @@
-import "@public/index.html";
+import "../index.html";
 import "@css/fonts.css";
 import "@css/style.css";

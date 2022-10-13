@@ -1,13 +1,18 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/js/index.js",
-  mode: "development",
   output: {
     filename: "main.js",
     clean: true,
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: "index.html",
+      template: "./src/index.html",
+    }),
+  ],
   module: {
     rules: [
       {
@@ -28,20 +33,8 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      filename: "index.html",
-      template: "./public/index.html",
-    }),
-  ],
-  devServer: {
-    compress: false,
-    open: "/",
-    port: 5004,
-  },
   resolve: {
     alias: {
-      "@public": path.resolve(__dirname, "public"),
       "@css": path.resolve(__dirname, "src/css"),
     },
   },
