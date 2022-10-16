@@ -762,10 +762,13 @@ main {
   overflow-x: auto;
 }
 
-.strong-points__img {
+.strong-points__flex-container > picture {
   max-width: 21.875em;
-  max-height: 32.8125em;
-  width: 93%;
+  flex: 0 0 93%;
+}
+
+.strong-points__img {
+  max-width: 100%;
 }
 
 .strong-points__title {
