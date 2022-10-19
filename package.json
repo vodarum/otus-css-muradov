@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "gh-pages -d dist"
   },
   "author": {
     "name": "Muradov Ravshan",
@@ -38,7 +39,9 @@
     "webpack-dev-server": "^4.11.1"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "html-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^2.6.1",
     "prettier": "2.7.1",
     "webpack-merge": "^5.8.0"
   }
